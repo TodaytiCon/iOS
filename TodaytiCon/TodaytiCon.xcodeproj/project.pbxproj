@@ -14,6 +14,7 @@
 		5481D0992577AED2002C46D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D0982577AED2002C46D4 /* ViewController.swift */; };
 		5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D09C2577AF00002C46D4 /* TestModel.swift */; };
 		ABF3B2750A17675235EA1A40 /* Pods_TodaytiCon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */; };
+		EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA7E7257A13530094A9E1 /* auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		5481D09C2577AF00002C46D4 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaytiCon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F52993BE85E5972BA72E44 /* Pods-TodaytiCon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.debug.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6BA7E7257A13530094A9E1 /* auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = auth.storyboard; sourceTree = "<group>"; };
 		FCA25E1D59960B979EA5E010 /* Pods-TodaytiCon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.release.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				54308EBE2577AAB40045AF90 /* Main.storyboard */,
+				EF6BA7E7257A13530094A9E1 /* auth.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */,
 				54308EC52577AAB60045AF90 /* LaunchScreen.storyboard in Resources */,
 				54308EC22577AAB60045AF90 /* Assets.xcassets in Resources */,
 				54308EC02577AAB40045AF90 /* Main.storyboard in Resources */,
