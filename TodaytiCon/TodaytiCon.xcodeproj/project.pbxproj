@@ -14,6 +14,11 @@
 		5481D0992577AED2002C46D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D0982577AED2002C46D4 /* ViewController.swift */; };
 		5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D09C2577AF00002C46D4 /* TestModel.swift */; };
 		ABF3B2750A17675235EA1A40 /* Pods_TodaytiCon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */; };
+		EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA7E7257A13530094A9E1 /* auth.storyboard */; };
+		EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */; };
+		EF6BA7EE257A17740094A9E1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA7ED257A17740094A9E1 /* LoginVC.swift */; };
+		EFD0BC5A25876EFE00677612 /* HTTP client.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0BC5925876EFE00677612 /* HTTP client.swift */; };
+		EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0BC61258770D900677612 /* NetworkingAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		5481D09C2577AF00002C46D4 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaytiCon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F52993BE85E5972BA72E44 /* Pods-TodaytiCon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.debug.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6BA7E7257A13530094A9E1 /* auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = auth.storyboard; sourceTree = "<group>"; };
+		EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EF6BA7ED257A17740094A9E1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		EFD0BC5925876EFE00677612 /* HTTP client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTP client.swift"; sourceTree = "<group>"; };
+		EFD0BC61258770D900677612 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
 		FCA25E1D59960B979EA5E010 /* Pods-TodaytiCon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.release.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,9 +76,10 @@
 				5481D0962577AEA5002C46D4 /* Model */,
 				54308ED32577AE340045AF90 /* UI */,
 				54308ED22577AE0D0045AF90 /* ViewController */,
-				54308EB82577AAB40045AF90 /* AppDelegate.swift */,
+				EFD0BC5825876ED800677612 /* Networking */,
 				54308EC12577AAB60045AF90 /* Assets.xcassets */,
 				54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */,
+				54308EB82577AAB40045AF90 /* AppDelegate.swift */,
 				54308EC62577AAB60045AF90 /* Info.plist */,
 			);
 			path = TodaytiCon;
@@ -78,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				5481D0982577AED2002C46D4 /* ViewController.swift */,
+				EF6BA7ED257A17740094A9E1 /* LoginVC.swift */,
+				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -86,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				54308EBE2577AAB40045AF90 /* Main.storyboard */,
+				EF6BA7E7257A13530094A9E1 /* auth.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -96,6 +110,15 @@
 				5481D09C2577AF00002C46D4 /* TestModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD0BC5825876ED800677612 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0BC5925876EFE00677612 /* HTTP client.swift */,
+				EFD0BC61258770D900677612 /* NetworkingAPI.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F775F43D4B31EB804C606FD6 /* Frameworks */ = {
@@ -174,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */,
 				54308EC52577AAB60045AF90 /* LaunchScreen.storyboard in Resources */,
 				54308EC22577AAB60045AF90 /* Assets.xcassets in Resources */,
 				54308EC02577AAB40045AF90 /* Main.storyboard in Resources */,
@@ -229,9 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */,
+				EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */,
 				54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */,
 				5481D0992577AED2002C46D4 /* ViewController.swift in Sources */,
+				EFD0BC5A25876EFE00677612 /* HTTP client.swift in Sources */,
 				5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */,
+				EF6BA7EE257A17740094A9E1 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +408,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G67LV27Z4;
 				INFOPLIST_FILE = TodaytiCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G67LV27Z4;
 				INFOPLIST_FILE = TodaytiCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
