@@ -53,7 +53,7 @@ class LoginVC: UIViewController {
             switch response.response?.statusCode{
             case 200 :
                 print("로그인 성공")
-//                self.navigationController?.pushViewController(mainTableViewController, animated: true)
+                self.navigationController?.pushViewController(MainListTableViewController, animated: true)
                 guard let data = response.data else {return}
                 guard let model = try? JSONDecoder().decode(LoginModel.self, from: data) else { return }
                 self.model = model
