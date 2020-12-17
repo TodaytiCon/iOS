@@ -9,25 +9,31 @@ import UIKit
 
 class MainListTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var mainListTableView: UITableView!
+    @IBOutlet weak var saveBtn: UIButton!
     
     let cellIdentifier: String = "mainCell"
-    
-    let testLabel: String = "Test"
+    let httpClient = HTTPClient()
+    private var resultModel: TimeLineResult = TimeLineResult()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        setLineBtn(saveBtn)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return todayTicon.count + 1
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: MainListTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! MainListTableViewCell
         
-        cell.dateLabel?.text = testLabel
+        cell.dateLabel?.text = "Disconnect"
         cell.feelLabel?.text = "🤬"
         
         return cell
@@ -44,5 +50,12 @@ class MainListTableViewController: UIViewController, UITableViewDataSource, UITa
         
     }
     
+    func setLineBtn(_ numOfBtn: UIButton) {
+        numOfBtn.layer.borderColor = UIColor.black.cgColor
+        numOfBtn.layer.borderWidth = 1.5
+        numOfBtn.layer.cornerRadius = 33.5
+        
+    }
+
 }
 

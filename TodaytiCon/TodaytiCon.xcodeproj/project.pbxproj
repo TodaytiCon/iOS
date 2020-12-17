@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5408CC9A2580D99700D48801 /* TodayTicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC992580D99700D48801 /* TodayTicon.swift */; };
+		5408CC9D2580DBCA00D48801 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC9C2580DBCA00D48801 /* HTTPClient.swift */; };
+		5408CCA02580DD3600D48801 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */; };
+		5408CCA32580E6B800D48801 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CCA22580E6B800D48801 /* DetailViewController.swift */; };
 		54301E892579F9AF0031E11D /* MainListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54301E882579F9AF0031E11D /* MainListTableViewController.swift */; };
 		54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54308EB82577AAB40045AF90 /* AppDelegate.swift */; };
 		54308EC02577AAB40045AF90 /* MainList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54308EBE2577AAB40045AF90 /* MainList.storyboard */; };
@@ -15,6 +19,7 @@
 		5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D09C2577AF00002C46D4 /* TestModel.swift */; };
 		54A3114C2579FB770086A999 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A3114B2579FB770086A999 /* MainListTableViewCell.swift */; };
 		54A31151257A195C0086A999 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A31150257A195C0086A999 /* SaveViewController.swift */; };
+		54A5A0122588C72500E05F98 /* TimeLineResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5A0112588C72500E05F98 /* TimeLineResult.swift */; };
 		ABF3B2750A17675235EA1A40 /* Pods_TodaytiCon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */; };
 		EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA7E7257A13530094A9E1 /* auth.storyboard */; };
 		EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */; };
@@ -24,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5408CC992580D99700D48801 /* TodayTicon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTicon.swift; sourceTree = "<group>"; };
+		5408CC9C2580DBCA00D48801 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		5408CCA22580E6B800D48801 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		54301E882579F9AF0031E11D /* MainListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListTableViewController.swift; sourceTree = "<group>"; };
 		54308EB52577AAB40045AF90 /* TodaytiCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaytiCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54308EB82577AAB40045AF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +43,7 @@
 		5481D09C2577AF00002C46D4 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		54A3114B2579FB770086A999 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
 		54A31150257A195C0086A999 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		54A5A0112588C72500E05F98 /* TimeLineResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineResult.swift; sourceTree = "<group>"; };
 		56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaytiCon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F52993BE85E5972BA72E44 /* Pods-TodaytiCon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.debug.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6BA7E7257A13530094A9E1 /* auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = auth.storyboard; sourceTree = "<group>"; };
@@ -86,6 +96,8 @@
 				54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */,
 				54308EB82577AAB40045AF90 /* AppDelegate.swift */,
 				54308EC62577AAB60045AF90 /* Info.plist */,
+				5408CC9C2580DBCA00D48801 /* HTTPClient.swift */,
+				5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */,
 			);
 			path = TodaytiCon;
 			sourceTree = "<group>";
@@ -98,11 +110,7 @@
 				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
 				54301E882579F9AF0031E11D /* MainListTableViewController.swift */,
 				54A31150257A195C0086A999 /* SaveViewController.swift */,
-=======
-				5481D0982577AED2002C46D4 /* ViewController.swift */,
-				EF6BA7ED257A17740094A9E1 /* LoginVC.swift */,
-				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
->>>>>>> main
+				5408CCA22580E6B800D48801 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -124,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				5481D09C2577AF00002C46D4 /* TestModel.swift */,
+				5408CC992580D99700D48801 /* TodayTicon.swift */,
+				54A5A0112588C72500E05F98 /* TimeLineResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,13 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */,
-				EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */,
+				5408CCA32580E6B800D48801 /* DetailViewController.swift in Sources */,
+				5408CCA02580DD3600D48801 /* NetworkingAPI.swift in Sources */,
 				54301E892579F9AF0031E11D /* MainListTableViewController.swift in Sources */,
+				5408CC9A2580D99700D48801 /* TodayTicon.swift in Sources */,
 				54A31151257A195C0086A999 /* SaveViewController.swift in Sources */,
+				5408CC9D2580DBCA00D48801 /* HTTPClient.swift in Sources */,
 				54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */,
-				5481D0992577AED2002C46D4 /* ViewController.swift in Sources */,
-				EFD0BC5A25876EFE00677612 /* HTTP client.swift in Sources */,
+				54A5A0122588C72500E05F98 /* TimeLineResult.swift in Sources */,
 				54A3114C2579FB770086A999 /* MainListTableViewCell.swift in Sources */,
 =======
 				EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */,

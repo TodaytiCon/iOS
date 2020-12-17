@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VVt-ff-ZSw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VVt-ff-ZSw">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,16 +82,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mainListTableView" destination="epc-KG-SB0" id="YjE-3f-rsj"/>
+                        <outlet property="saveBtn" destination="cen-gL-EZ2" id="Xiy-Eh-Ub6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962.39999999999998" y="79.802955665024641"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="aJB-0f-XJf">
             <objects>
-                <viewController id="2PV-zg-Mx5" sceneMemberID="viewController">
+                <viewController id="2PV-zg-Mx5" customClass="DetailViewController" customModule="TodaytiCon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IGd-bP-per">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +135,18 @@
                         <viewLayoutGuide key="safeArea" id="4IU-cB-OeW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LTn-Wr-pQK"/>
+                    <navigationItem key="navigationItem" id="LTn-Wr-pQK">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" style="plain" id="xfA-Wo-qnn">
+                            <color key="tintColor" red="0.99813598390000002" green="0.0068380823360000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="deleteBtn:" destination="2PV-zg-Mx5" id="FLm-rT-fef"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateLabel" destination="SNc-7Z-9oW" id="9On-RF-IJ1"/>
+                        <outlet property="feelLabel" destination="0TS-Nh-jMr" id="YfE-ga-h4x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YdX-Fv-3qA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,8 +167,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2020.09.03" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-QK-Gvx">
-                                <rect key="frame" x="77.666666666666657" y="145.66666666666666" width="220" height="24"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ceN-QK-Gvx">
+                                <rect key="frame" x="78.666666666666742" y="145.66666666666663" width="220" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -168,7 +180,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="☺️" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-zU-30K">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nW3-zU-30K">
                                 <rect key="frame" x="157.66666666666666" y="217.66666666666666" width="60" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -185,21 +197,33 @@
                                 <rect key="frame" x="86.666666666666657" y="294.66666666666663" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="iconfinder_weather-01_1530392"/>
+                                <connections>
+                                    <action selector="sunnyBtnAction:" destination="Jo8-gr-wEB" eventType="touchUpInside" id="RW3-Lc-z2p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pO-LJ-CSd">
                                 <rect key="frame" x="193.66666666666666" y="294.66666666666663" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="iconfinder_weather-27_1530368"/>
+                                <connections>
+                                    <action selector="cloudyBtnAction:" destination="Jo8-gr-wEB" eventType="touchUpInside" id="SBa-MA-RkW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6X-MF-6Uy">
                                 <rect key="frame" x="86.666666666666657" y="401.66666666666663" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="iconfinder_weather-30_1530365"/>
+                                <connections>
+                                    <action selector="rainyBtnAction:" destination="Jo8-gr-wEB" eventType="touchUpInside" id="mWp-el-kBH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zD-uy-fAp">
                                 <rect key="frame" x="193.66666666666666" y="401.66666666666663" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="iconfinder_weather-24_1530371"/>
+                                <connections>
+                                    <action selector="snowyBtnAction:" destination="Jo8-gr-wEB" eventType="touchUpInside" id="PMX-Jf-TTg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diary" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daY-8N-5Zy">
                                 <rect key="frame" x="170.66666666666666" y="521.66666666666663" width="34" height="18"/>
@@ -212,11 +236,6 @@
                                 <rect key="frame" x="77.666666666666657" y="544.66666666666663" width="225" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text"> 오늘 날치알 김치볶음밥을 해먹었는데
-존맛탱이었다. 밥알이 살아있고, 김치도
-잘 익은 것 같았다. 그리고 화룡점정으로
-신선한 날치알까지..
- 아, 다음에 다시 해먹어야지!</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12.5"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -226,16 +245,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="S4y-Gp-1pX">
-                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="sUR-IQ-3tw"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="sUR-IQ-3tw">
+                            <connections>
+                                <action selector="addButtonAction:" destination="Jo8-gr-wEB" id="E9X-2l-z3B"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cloudyBtn" destination="7pO-LJ-CSd" id="RKs-5B-UsT"/>
+                        <outlet property="cloudyBtn" destination="7pO-LJ-CSd" id="L1c-qc-c3B"/>
                         <outlet property="dateTF" destination="ceN-QK-Gvx" id="i5d-Ph-1nj"/>
                         <outlet property="feelTF" destination="nW3-zU-30K" id="pSf-5F-zlj"/>
                         <outlet property="memoTV" destination="Tqb-02-4Tx" id="A2y-9r-slR"/>
-                        <outlet property="rainyBtn" destination="Z6X-MF-6Uy" id="RMP-et-ttI"/>
-                        <outlet property="snowyBtn" destination="1zD-uy-fAp" id="C79-Tv-en2"/>
-                        <outlet property="sunnyBtn" destination="2RG-Fr-pZP" id="Nh6-cH-Nbp"/>
+                        <outlet property="rainyBtn" destination="Z6X-MF-6Uy" id="Bc3-e6-p4r"/>
+                        <outlet property="snowyBtn" destination="1zD-uy-fAp" id="IdF-Ji-TK6"/>
+                        <outlet property="sunnyBtn" destination="2RG-Fr-pZP" id="7sU-tn-K44"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xnf-OF-z58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
