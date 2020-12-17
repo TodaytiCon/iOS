@@ -93,13 +93,9 @@
 		54308ED22577AE0D0045AF90 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
 				5481D0982577AED2002C46D4 /* ViewController.swift */,
 				EF6BA7ED257A17740094A9E1 /* LoginVC.swift */,
 				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 				54301E882579F9AF0031E11D /* MainListTableViewController.swift */,
 				54A31150257A195C0086A999 /* SaveViewController.swift */,
 =======
@@ -114,11 +110,7 @@
 		54308ED32577AE340045AF90 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
 				EF6BA7E7257A13530094A9E1 /* auth.storyboard */,
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 				54308EBE2577AAB40045AF90 /* MainList.storyboard */,
 =======
 				54308EBE2577AAB40045AF90 /* Main.storyboard */,
@@ -136,7 +128,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-<<<<<<< Updated upstream
 		EFD0BC5825876ED800677612 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,9 +137,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 		54A3114A2579FB5B0086A999 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,12 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< Updated upstream
 				EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */,
 				EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */,
-=======
-<<<<<<< HEAD
->>>>>>> Stashed changes
 				54301E892579F9AF0031E11D /* MainListTableViewController.swift in Sources */,
 				54A31151257A195C0086A999 /* SaveViewController.swift in Sources */,
 				54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */,
