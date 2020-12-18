@@ -13,6 +13,7 @@ struct LoginModel: Codable{
 }
 
 class LoginVC: UIViewController {
+   
     
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var pwTextField : UITextField!{
@@ -53,12 +54,21 @@ class LoginVC: UIViewController {
             switch response.response?.statusCode{
             case 200 :
                 print("로그인 성공")
-//                self.navigationController?.pushViewController(mainTableViewController, animated: true)
+                //self.performSegue(withIdentifier: "Main", sender: self)
+               
+                //self.navigationController?.pushViewController(, animated: true)
                 guard let data = response.data else {return}
                 guard let model = try? JSONDecoder().decode(LoginModel.self, from: data) else { return }
                 self.model = model
             default :
                 print("나도몰라")
+                let alert = UIAlertController(title: "로그인에 실패하셨습니다.", message: "이메일이나 비밀번호를 확인해 주세요.", preferredStyle: UIAlertController.Style.alert)
+                
+                let cancelAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+                
+                alert.addAction(cancelAction)
+                
+                self.present(alert, animated: true, completion: nil)
                 
             }
         })

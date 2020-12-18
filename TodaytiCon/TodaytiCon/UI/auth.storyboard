@@ -89,11 +89,22 @@
                         <outlet property="loginButton" destination="W27-4Z-pjr" id="Eow-bo-3a7"/>
                         <outlet property="pwTextField" destination="cHW-In-LLK" id="kV4-Cm-AgO"/>
                         <outlet property="signUpButton" destination="4uh-Nt-qtn" id="N96-l4-hwP"/>
+                        <segue destination="sGj-JC-z6K" kind="show" id="QGR-G2-WqS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wa-oS-arE" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="93.103448275862078"/>
+        </scene>
+        <!--MainList-->
+        <scene sceneID="H3z-1V-l0N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainList" id="sGj-JC-z6K" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1lw-kN-5bs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hh5-RG-TTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944" y="745"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="ofO-TM-ejy">
@@ -271,7 +282,7 @@
         <!--Navigation Controller-->
         <scene sceneID="mt6-VN-6Zh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FzY-gp-q2a" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="First" automaticallyAdjustsScrollViewInsets="NO" id="FzY-gp-q2a" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Qm-42-bMz">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

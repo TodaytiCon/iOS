@@ -8,34 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54308EB82577AAB40045AF90 /* AppDelegate.swift */; };
-		54308EC02577AAB40045AF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54308EBE2577AAB40045AF90 /* Main.storyboard */; };
 		54308EC22577AAB60045AF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54308EC12577AAB60045AF90 /* Assets.xcassets */; };
 		54308EC52577AAB60045AF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */; };
-		5481D0992577AED2002C46D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D0982577AED2002C46D4 /* ViewController.swift */; };
-		5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5481D09C2577AF00002C46D4 /* TestModel.swift */; };
+		543FDB3A258C32CF0042F8E0 /* TodayTicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB39258C32CF0042F8E0 /* TodayTicon.swift */; };
+		543FDB3E258C33040042F8E0 /* TimeLineResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB3D258C33040042F8E0 /* TimeLineResult.swift */; };
+		543FDB45258C334E0042F8E0 /* MainListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB44258C334E0042F8E0 /* MainListTableViewCell.swift */; };
+		543FDB48258C33890042F8E0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB47258C33890042F8E0 /* HTTPClient.swift */; };
+		543FDB4B258C33B10042F8E0 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB4A258C33B10042F8E0 /* SaveViewController.swift */; };
+		543FDB4E258C33BA0042F8E0 /* MainListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB4D258C33BA0042F8E0 /* MainListTableViewController.swift */; };
+		543FDB51258C33BF0042F8E0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543FDB50258C33BF0042F8E0 /* DetailViewController.swift */; };
+		543FDB55258C340E0042F8E0 /* MainList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543FDB54258C340E0042F8E0 /* MainList.storyboard */; };
 		ABF3B2750A17675235EA1A40 /* Pods_TodaytiCon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */; };
 		EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA7E7257A13530094A9E1 /* auth.storyboard */; };
 		EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */; };
 		EF6BA7EE257A17740094A9E1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA7ED257A17740094A9E1 /* LoginVC.swift */; };
-		EFD0BC5A25876EFE00677612 /* HTTP client.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0BC5925876EFE00677612 /* HTTP client.swift */; };
 		EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD0BC61258770D900677612 /* NetworkingAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54308EB52577AAB40045AF90 /* TodaytiCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaytiCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54308EB82577AAB40045AF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54308EBF2577AAB40045AF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54308EC12577AAB60045AF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54308EC42577AAB60045AF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54308EC62577AAB60045AF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5481D0982577AED2002C46D4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5481D09C2577AF00002C46D4 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		543FDB39258C32CF0042F8E0 /* TodayTicon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayTicon.swift; sourceTree = "<group>"; };
+		543FDB3D258C33040042F8E0 /* TimeLineResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineResult.swift; sourceTree = "<group>"; };
+		543FDB44258C334E0042F8E0 /* MainListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewCell.swift; sourceTree = "<group>"; };
+		543FDB47258C33890042F8E0 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		543FDB4A258C33B10042F8E0 /* SaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		543FDB4D258C33BA0042F8E0 /* MainListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainListTableViewController.swift; path = TodaytiCon/ViewController/MainListTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		543FDB50258C33BF0042F8E0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = TodaytiCon/ViewController/DetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		543FDB54258C340E0042F8E0 /* MainList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainList.storyboard; sourceTree = "<group>"; };
 		56FCF7EE3523245BEAAECE15 /* Pods_TodaytiCon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodaytiCon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F52993BE85E5972BA72E44 /* Pods-TodaytiCon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.debug.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6BA7E7257A13530094A9E1 /* auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = auth.storyboard; sourceTree = "<group>"; };
 		EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		EF6BA7ED257A17740094A9E1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		EFD0BC5925876EFE00677612 /* HTTP client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTP client.swift"; sourceTree = "<group>"; };
 		EFD0BC61258770D900677612 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
 		FCA25E1D59960B979EA5E010 /* Pods-TodaytiCon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodaytiCon.release.xcconfig"; path = "Target Support Files/Pods-TodaytiCon/Pods-TodaytiCon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,7 @@
 		54308EB72577AAB40045AF90 /* TodaytiCon */ = {
 			isa = PBXGroup;
 			children = (
+				543FDB43258C333E0042F8E0 /* Cell */,
 				5481D0962577AEA5002C46D4 /* Model */,
 				54308ED32577AE340045AF90 /* UI */,
 				54308ED22577AE0D0045AF90 /* ViewController */,
@@ -88,7 +97,9 @@
 		54308ED22577AE0D0045AF90 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5481D0982577AED2002C46D4 /* ViewController.swift */,
+				543FDB4D258C33BA0042F8E0 /* MainListTableViewController.swift */,
+				543FDB4A258C33B10042F8E0 /* SaveViewController.swift */,
+				543FDB50258C33BF0042F8E0 /* DetailViewController.swift */,
 				EF6BA7ED257A17740094A9E1 /* LoginVC.swift */,
 				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
 			);
@@ -98,16 +109,25 @@
 		54308ED32577AE340045AF90 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				54308EBE2577AAB40045AF90 /* Main.storyboard */,
 				EF6BA7E7257A13530094A9E1 /* auth.storyboard */,
+				543FDB54258C340E0042F8E0 /* MainList.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		543FDB43258C333E0042F8E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				543FDB44258C334E0042F8E0 /* MainListTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		5481D0962577AEA5002C46D4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5481D09C2577AF00002C46D4 /* TestModel.swift */,
+				543FDB3D258C33040042F8E0 /* TimeLineResult.swift */,
+				543FDB39258C32CF0042F8E0 /* TodayTicon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,7 +135,7 @@
 		EFD0BC5825876ED800677612 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				EFD0BC5925876EFE00677612 /* HTTP client.swift */,
+				543FDB47258C33890042F8E0 /* HTTPClient.swift */,
 				EFD0BC61258770D900677612 /* NetworkingAPI.swift */,
 			);
 			path = Networking;
@@ -200,7 +220,7 @@
 				EF6BA7E8257A13530094A9E1 /* auth.storyboard in Resources */,
 				54308EC52577AAB60045AF90 /* LaunchScreen.storyboard in Resources */,
 				54308EC22577AAB60045AF90 /* Assets.xcassets in Resources */,
-				54308EC02577AAB40045AF90 /* Main.storyboard in Resources */,
+				543FDB55258C340E0042F8E0 /* MainList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,27 +273,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543FDB51258C33BF0042F8E0 /* DetailViewController.swift in Sources */,
+				543FDB4E258C33BA0042F8E0 /* MainListTableViewController.swift in Sources */,
 				EFD0BC62258770D900677612 /* NetworkingAPI.swift in Sources */,
+				543FDB3A258C32CF0042F8E0 /* TodayTicon.swift in Sources */,
+				543FDB48258C33890042F8E0 /* HTTPClient.swift in Sources */,
+				543FDB45258C334E0042F8E0 /* MainListTableViewCell.swift in Sources */,
+				543FDB4B258C33B10042F8E0 /* SaveViewController.swift in Sources */,
 				EF6BA7EB257A17670094A9E1 /* SignUpVC.swift in Sources */,
 				54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */,
-				5481D0992577AED2002C46D4 /* ViewController.swift in Sources */,
-				EFD0BC5A25876EFE00677612 /* HTTP client.swift in Sources */,
-				5481D09D2577AF00002C46D4 /* TestModel.swift in Sources */,
 				EF6BA7EE257A17740094A9E1 /* LoginVC.swift in Sources */,
+				543FDB3E258C33040042F8E0 /* TimeLineResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		54308EBE2577AAB40045AF90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54308EBF2577AAB40045AF90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NoDomain.TodaytiCon;
+				PRODUCT_BUNDLE_IDENTIFIER = NoDomain.TodayTicon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,7 +450,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NoDomain.TodaytiCon;
+				PRODUCT_BUNDLE_IDENTIFIER = NoDomain.TodayTicon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
