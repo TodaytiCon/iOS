@@ -30,7 +30,15 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
+<<<<<<< HEAD
 	<string>MainList</string>
+=======
+<<<<<<< HEAD
+	<string>MainList</string>
+=======
+	<string>auth</string>
+>>>>>>> main
+>>>>>>> main
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

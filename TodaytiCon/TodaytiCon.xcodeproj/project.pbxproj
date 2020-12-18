@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5408CC9A2580D99700D48801 /* TodayTicon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC992580D99700D48801 /* TodayTicon.swift */; };
+		5408CC9D2580DBCA00D48801 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC9C2580DBCA00D48801 /* HTTPClient.swift */; };
+		5408CCA02580DD3600D48801 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */; };
+		5408CCA32580E6B800D48801 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408CCA22580E6B800D48801 /* DetailViewController.swift */; };
+		54301E892579F9AF0031E11D /* MainListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54301E882579F9AF0031E11D /* MainListTableViewController.swift */; };
 		54308EB92577AAB40045AF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54308EB82577AAB40045AF90 /* AppDelegate.swift */; };
 		54308EC22577AAB60045AF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54308EC12577AAB60045AF90 /* Assets.xcassets */; };
 		54308EC52577AAB60045AF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5408CC992580D99700D48801 /* TodayTicon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTicon.swift; sourceTree = "<group>"; };
+		5408CC9C2580DBCA00D48801 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		5408CCA22580E6B800D48801 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		54301E882579F9AF0031E11D /* MainListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListTableViewController.swift; sourceTree = "<group>"; };
 		54308EB52577AAB40045AF90 /* TodaytiCon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodaytiCon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54308EB82577AAB40045AF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54308EC12577AAB60045AF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +100,8 @@
 				54308EC32577AAB60045AF90 /* LaunchScreen.storyboard */,
 				54308EB82577AAB40045AF90 /* AppDelegate.swift */,
 				54308EC62577AAB60045AF90 /* Info.plist */,
+				5408CC9C2580DBCA00D48801 /* HTTPClient.swift */,
+				5408CC9F2580DD3600D48801 /* NetworkingAPI.swift */,
 			);
 			path = TodaytiCon;
 			sourceTree = "<group>";
@@ -102,6 +114,9 @@
 				543FDB50258C33BF0042F8E0 /* DetailViewController.swift */,
 				EF6BA7ED257A17740094A9E1 /* LoginVC.swift */,
 				EF6BA7EA257A17670094A9E1 /* SignUpVC.swift */,
+				54301E882579F9AF0031E11D /* MainListTableViewController.swift */,
+				54A31150257A195C0086A999 /* SaveViewController.swift */,
+				5408CCA22580E6B800D48801 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -139,6 +154,23 @@
 				EFD0BC61258770D900677612 /* NetworkingAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		54A3114A2579FB5B0086A999 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				54A3114B2579FB770086A999 /* MainListTableViewCell.swift */,
+			);
+			path = Cell;
+=======
+		EFD0BC5825876ED800677612 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EFD0BC5925876EFE00677612 /* HTTP client.swift */,
+				EFD0BC61258770D900677612 /* NetworkingAPI.swift */,
+			);
+			path = Networking;
+>>>>>>> main
 			sourceTree = "<group>";
 		};
 		F775F43D4B31EB804C606FD6 /* Frameworks */ = {
